@@ -1,0 +1,25 @@
+/* SilverWare Admin Menu Styles
+===================================================================================================================== */
+
+// Logo Styles:
+
+.cms-logo {
+  
+  span {
+    font-weight: 500;
+  }
+  
+}
+
+// Menu Icon Styles:
+
+.menu__icon {
+  
+  &.fa {
+    width: 16px;
+    font-size: 14px;
+    text-align: center;
+    line-height: $line-height;
+  }
+  
+}

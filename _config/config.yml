@@ -1,0 +1,17 @@
+---
+Name: silverware-admin
+---
+
+# Configure Admin Extensions:
+
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - SilverWare\Admin\Extensions\LeftAndMainExtension
+    - SilverWare\Admin\Extensions\PageIconExtension
+  extra_requirements_css:
+    - silverware-admin/client/dist/styles/bundle.css
+  extra_requirements_javascript:
+    - silverware-admin/client/dist/js/bundle.js
+  page_icon_selectors:
+    - '.page-icon.class-%s'
+    - 'li.class-%s > a .jstree-pageicon'

@@ -1,0 +1,34 @@
+/* SilverWare Admin Forms Styles
+===================================================================================================================== */
+
+// Field Label Styles:
+
+.form__field-extra-label,
+.form__field-description {
+  color: $body-color-lighter;
+  font-size: $font-size-base;
+}
+
+// Dropdown Field Styles:
+
+.chosen-container-single {
+  
+  .chosen-single {
+    
+    &.chosen-default {
+      color: $input-color-placeholder;
+    }
+    
+    abbr {
+      top: 11px;
+    }
+    
+  }
+  
+}
+
+// Datepicker Field Styles:
+
+.field .btr-dateinput-calendar {
+  font-family: inherit;
+}

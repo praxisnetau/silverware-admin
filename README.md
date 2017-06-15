@@ -1,5 +1,9 @@
 # SilverWare Admin Module
 
+[![Latest Stable Version](https://poser.pugx.org/silverware/admin/v/stable)](https://packagist.org/packages/silverware/admin)
+[![Latest Unstable Version](https://poser.pugx.org/silverware/admin/v/unstable)](https://packagist.org/packages/silverware/admin)
+[![License](https://poser.pugx.org/silverware/admin/license)](https://packagist.org/packages/silverware/admin)
+
 Allows an admin style for [SilverStripe Admin v4][silverstripe-admin] to be defined via configuration, and fixes the
 broken page icons currently present in SS4 alpha.
 

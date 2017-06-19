@@ -11,14 +11,34 @@ $.entwine('ss', function($) {
     
     onmatch: function() {
       
-      // Replace Backslashes with Underscores:
+      // Fix Page Icon:
       
-      $(this).attr('class', $(this).attr('class').replace(/\\/g, '_'));
+      this.fixIcon();
       
       // Trigger Next Method:
       
       this._super();
       
+    },
+    
+    fixIcon: function() {
+      
+      // Replace Backslashes with Underscores
+      
+      $(this).attr('class', $(this).attr('class').replace(/\\/g, '_'));
+      
+    }
+    
+  });
+  
+  // Handle CMS Tree Updates:
+  
+  $('body').on('DOMSubtreeModified', 'div.cms-tree ul li[class*=class-]', function() {
+    
+    // Match Class Names with Backslashes:
+    
+    if ($(this).attr('class').indexOf('\\') > -1) {
+      $(this).fixIcon();
     }
     
   });

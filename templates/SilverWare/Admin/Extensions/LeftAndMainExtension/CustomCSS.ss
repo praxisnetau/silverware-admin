@@ -1,66 +1,70 @@
-.cms-logo-header {
-  <% if $hasAdminStyle('ColorBackgroundLogo') %>background-color: {$getAdminStyle('ColorBackgroundLogo')};<% end_if %>
+.cms-menu__header {
+  <% if $hasAdminStyle('ColorBackgroundMenuHeader') %>background-color: {$getAdminStyle('ColorBackgroundMenuHeader')};<% end_if %>
 }
 
-.cms-logo-header span {
-  <% if $hasAdminStyle('ColorForegroundLogo') %>color: {$getAdminStyle('ColorForegroundLogo')};<% end_if %>
+.cms-menu__header .cms-sitename {
+  <% if $hasAdminStyle('ColorBorderBottomSiteName') %>border-bottom-color: {$getAdminStyle('ColorBorderBottomSiteName')};<% end_if %>
 }
 
-.cms-logo-header .cms-login-status .logout-link {
-  <% if $hasAdminStyle('ColorLinkLogoIcon') %>color: {$getAdminStyle('ColorLinkLogoIcon')};<% end_if %>
+.cms-menu__header .cms-sitename .cms-sitename__title {
+  <% if $hasAdminStyle('ColorForegroundSiteName') %>color: {$getAdminStyle('ColorForegroundSiteName')};<% end_if %>
 }
 
-.cms-logo-header span a {
-  <% if $hasAdminStyle('ColorLinkLogo') %>color: {$getAdminStyle('ColorLinkLogo')};<% end_if %>
+.cms-menu__header .cms-login-status .cms-login-status__profile-link span {
+  <% if $hasAdminStyle('ColorForegroundProfile') %>color: {$getAdminStyle('ColorForegroundProfile')};<% end_if %>
 }
 
-.cms-logo {
-  <% if $hasAdminStyle('ColorBorderBottomLogo') %>border-bottom-color: {$getAdminStyle('ColorBorderBottomLogo')};<% end_if %>
+.cms-menu__header .cms-login-status .cms-login-status__profile-link {
+  <% if $hasAdminStyle('ColorIconProfile') %>color: {$getAdminStyle('ColorIconProfile')};<% end_if %>
+}
+
+.cms-menu__header .cms-login-status .cms-login-status__logout-link {
+  <% if $hasAdminStyle('ColorIconLogout') %>color: {$getAdminStyle('ColorIconLogout')};<% end_if %>
 }
 
 .cms-menu {
   <% if $hasAdminStyle('ColorBackgroundMenu') %>background-color: {$getAdminStyle('ColorBackgroundMenu')};<% end_if %>
 }
 
-.cms-menu-list li a {
+.cms-menu__list li a {
   <% if $hasAdminStyle('ColorForegroundMenuItem') %>color: {$getAdminStyle('ColorForegroundMenuItem')};<% end_if %>
   <% if $hasAdminStyle('ColorBackgroundMenuItem') %>background-color: {$getAdminStyle('ColorBackgroundMenuItem')};<% end_if %>
 }
 
-.cms-menu-list li a:active,
-.cms-menu-list li a:focus,
-.cms-menu-list li a:hover {
+.cms-menu__list li a:active,
+.cms-menu__list li a:focus,
+.cms-menu__list li a:hover {
   <% if $hasAdminStyle('ColorForegroundHoverMenuItem') %>color: {$getAdminStyle('ColorForegroundHoverMenuItem')};<% end_if %>
   <% if $hasAdminStyle('ColorBackgroundHoverMenuItem') %>background-color: {$getAdminStyle('ColorBackgroundHoverMenuItem')};<% end_if %>
 }
 
-.cms-menu-list li.current a {
+.cms-menu__list li.current a {
   <% if $hasAdminStyle('ColorForegroundCurrentMenuItem') %>color: {$getAdminStyle('ColorForegroundCurrentMenuItem')};<% end_if %>
   <% if $hasAdminStyle('ColorBackgroundCurrentMenuItem') %>background-color: {$getAdminStyle('ColorBackgroundCurrentMenuItem')};<% end_if %>
 }
 
-.cms-menu-list li a .menu__icon {
-  <% if $hasAdminStyle('ColorMenuItemIcon') %>color: {$getAdminStyle('ColorMenuItemIcon')};<% end_if %>
+.cms-menu__list li a .menu__icon {
+  <% if $hasAdminStyle('ColorIconMenuItem') %>color: {$getAdminStyle('ColorIconMenuItem')};<% end_if %>
 }
 
-.cms-menu-list li a .text::after, #Menu-Help .text::after {
+.cms-menu__list li a .text::after, #Menu-Help .text::after {
   <% if $hasAdminStyle('ColorMenuItemAfterText') %>color: {$getAdminStyle('ColorMenuItemAfterText')};<% end_if %>
 }
 
-.cms-menu-list li a:active .menu__icon,
-.cms-menu-list li a:focus .menu__icon,
-.cms-menu-list li a:hover .menu__icon {
-  <% if $hasAdminStyle('ColorHoverMenuItemIcon') %>color: {$getAdminStyle('ColorHoverMenuItemIcon')};<% end_if %>
+.cms-menu__list li a:active .menu__icon,
+.cms-menu__list li a:focus .menu__icon,
+.cms-menu__list li a:hover .menu__icon {
+  <% if $hasAdminStyle('ColorIconHoverMenuItem') %>color: {$getAdminStyle('ColorIconHoverMenuItem')};<% end_if %>
 }
 
-.cms-menu-list li.current a .menu__icon {
-  <% if $hasAdminStyle('ColorCurrentMenuItemIcon') %>color: {$getAdminStyle('ColorCurrentMenuItemIcon')};<% end_if %>
+.cms-menu__list li.current a .menu__icon {
+  <% if $hasAdminStyle('ColorIconCurrentMenuItem') %>color: {$getAdminStyle('ColorIconCurrentMenuItem')};<% end_if %>
 }
 
 .cms-menu .cms-panel-content,
 .cms-menu .cms-panel-toggle,
-.cms-menu .cms-menu-list,
-.cms-menu-list li a {
+.cms-menu .cms-menu__list,
+.cms-menu__list li a {
   <% if $getAdminStyle('ColorBorderRightMenuHide') %>
     -webkit-box-shadow: none;
     -moz-box-shadow: none;

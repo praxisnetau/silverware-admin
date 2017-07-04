@@ -1,12 +1,22 @@
 /* SilverWare Admin Menu Styles
 ===================================================================================================================== */
 
-// Logo Styles:
+// Menu Header Styles:
 
-.cms-logo {
+.cms-menu__header {
   
-  span {
+  .cms-sitename {
     font-weight: 500;
+  }
+  
+  .cms-login-status .cms-login-status__profile-link {
+    
+    padding: 0 0 0 8px;
+    
+    span {
+      padding-left: 30px;
+    }
+    
   }
   
 }

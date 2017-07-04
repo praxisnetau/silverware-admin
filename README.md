@@ -60,11 +60,12 @@ array in your configuration. This needs to be applied to `LeftAndMain`. For exam
 ```yaml
 SilverStripe\Admin\LeftAndMain:
   admin_style:
-    ColorBackgroundLogo: '#005b94'
-    ColorForegroundLogo: 'rgba(255, 255, 255, 0.8)'
-    ColorLinkLogo: '#fff'
-    ColorLinkLogoIcon: 'rgba(255, 255, 255, 0.8)'
-    ColorBorderBottomLogo: '#106ba4'
+    ColorBackgroundMenuHeader: '#005b94'
+    ColorForegroundSiteName: '#fff'
+    ColorForegroundProfile: '#fff'
+    ColorIconProfile: '#fff'
+    ColorIconLogout: '#fff'
+    ColorBorderBottomSiteName: '#106ba4'
     ColorBackgroundMenu: '#20282c'
     ColorBackgroundMenuItem: '#20282c'
     ColorForegroundMenuItem: '#bfc0c0'
@@ -74,10 +75,10 @@ SilverStripe\Admin\LeftAndMain:
     ColorForegroundCurrentMenuItem: '#fff'
     ColorBorderRightMenuHide: false
     ColorBorderRightMenu: '#20282c'
-    ColorMenuItemIcon: '#bfc0c0'
+    ColorIconMenuItem: '#bfc0c0'
+    ColorIconHoverMenuItem: '#fff'
+    ColorIconCurrentMenuItem: '#fff'
     ColorMenuItemAfterText: '#fff'
-    ColorHoverMenuItemIcon: '#fff'
-    ColorCurrentMenuItemIcon: '#fff'
     ColorBackgroundToggle: '#20282c'
     ColorBorderTopToggle: '#20282c'
     ColorToggleStatus: '#fff'

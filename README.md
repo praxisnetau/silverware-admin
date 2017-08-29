@@ -4,8 +4,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/silverware/admin/v/unstable)](https://packagist.org/packages/silverware/admin)
 [![License](https://poser.pugx.org/silverware/admin/license)](https://packagist.org/packages/silverware/admin)
 
-Allows an admin style for [SilverStripe Admin v4][silverstripe-admin] to be defined via configuration, and fixes the
-broken page icons currently present in SS4 alpha.
+Allows an admin style for [SilverStripe Admin v4][silverstripe-admin] to be defined via configuration.
 
 ## Contents
 
@@ -38,19 +37,6 @@ $ composer require silverware/admin
 
 As with all SilverStripe modules, configuration is via YAML. Extensions to `LeftAndMain` are applied
 via `config.yml`.
-
-### Page Icon Fix
-
-The module fixes the broken page icons currently present in SS4 alpha, and
-uses the `page_icon_selectors` array defined in `config.yml` to build its custom CSS.
-By default, these selectors are:
-
-- `.page-icon.class-%s`
-- `li.class-%s > a .jstree-pageicon`
-
-Elements matching the configured selectors will have their CSS class backslashes
-replaced with underscores, resulting in valid CSS and allowing the page icons to appear again
-in the site tree.
 
 ### Admin Style
 

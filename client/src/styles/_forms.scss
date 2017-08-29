@@ -6,7 +6,7 @@
 .form__field-extra-label,
 .form__field-description {
   color: $body-color-lighter;
-  font-size: $font-size-base;
+  font-size: $font-size-root;
 }
 
 // Dropdown Field Styles:
@@ -23,6 +23,16 @@
       top: 11px;
     }
     
+  }
+  
+}
+
+// Tree Dropdown Field Styles:
+
+.field .TreeDropdownField {
+  
+  .treedropdownfield-title > .jstree-pageicon {
+    display: none;
   }
   
 }

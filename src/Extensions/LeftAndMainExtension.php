@@ -81,6 +81,16 @@ class LeftAndMainExtension extends BaseExtension
     }
     
     /**
+     * Answers true if disabled page types are to be hidden from the CMS add form.
+     *
+     * @return boolean
+     */
+    public function getHideDisabledPageTypes()
+    {
+        return (boolean) $this->owner->config()->hide_disabled_page_types;
+    }
+    
+    /**
      * Generates a string of custom CSS for the admin.
      *
      * @return string

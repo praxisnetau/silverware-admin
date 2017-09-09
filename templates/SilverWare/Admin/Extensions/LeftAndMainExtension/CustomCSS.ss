@@ -92,3 +92,9 @@
 .cms-menu .sticky-toggle {
   <% if $hasAdminStyle('ColorToggleStatus') %>color: {$getAdminStyle('ColorToggleStatus')};<% end_if %>
 }
+
+<% if $HideDisabledPageTypes %>
+  .cms-add-form .radio.disabled {
+    display: none;
+  }
+<% end_if %>

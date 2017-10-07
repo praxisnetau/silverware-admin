@@ -14,13 +14,3 @@
  * @license https://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
  * @link https://github.com/praxisnetau/silverware-admin
  */
-
-// Define Module Constants:
-
-if (!defined('SILVERWARE_ADMIN_DIR')) {
-    define('SILVERWARE_ADMIN_DIR', basename(__DIR__));
-}
-
-if (!defined('SILVERWARE_ADMIN_PATH')) {
-    define('SILVERWARE_ADMIN_PATH', realpath(__DIR__));
-}

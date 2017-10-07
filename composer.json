@@ -1,6 +1,6 @@
 {
   "name": "silverware/admin",
-  "type": "silverstripe-module",
+  "type": "silverstripe-vendormodule",
   "description": "SilverWare Admin Module.",
   "homepage": "https://github.com/praxisnetau/silverware-admin",
   "keywords": [
@@ -30,7 +30,9 @@
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     },
-    "installer-name": "silverware-admin"
+    "expose": [
+      "client/dist"
+    ]
   },
   "minimum-stability": "dev",
   "prefer-stable": true

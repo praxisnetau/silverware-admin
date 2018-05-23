@@ -57,7 +57,7 @@ class LeftAndMainExtension extends BaseExtension
     /**
      * Answers the admin style with the specified name.
      *
-     * @param $name Name of style.
+     * @param string $name Name of style.
      *
      * @return string
      */
@@ -71,7 +71,7 @@ class LeftAndMainExtension extends BaseExtension
     /**
      * Answers true if an admin style exists with the specified name.
      *
-     * @param $name Name of style.
+     * @param string $name Name of style.
      *
      * @return boolean
      */

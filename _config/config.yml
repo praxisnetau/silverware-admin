@@ -9,5 +9,3 @@ SilverStripe\Admin\LeftAndMain:
     - SilverWare\Admin\Extensions\LeftAndMainExtension
   extra_requirements_css:
     - "silverware/admin: client/dist/styles/bundle.css"
-  extra_requirements_javascript:
-    - "silverware/admin: client/dist/js/bundle.js"

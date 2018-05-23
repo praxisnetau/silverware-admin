@@ -7,3 +7,36 @@
 .tree-holder.jstree li.Root strong {
   font-weight: 500;
 }
+
+// Context Menu Styles:
+
+.cms {
+  
+  #vakata-contextmenu {
+    
+    li {
+      
+      ul {
+        
+        flex: initial;
+        max-width: none;
+        
+        &.col-1 {
+          width: 182px;
+        }
+        
+        &.col-2 {
+          width: 362px;
+        }
+        
+        &.col-3 {
+          width: 542px;
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+}

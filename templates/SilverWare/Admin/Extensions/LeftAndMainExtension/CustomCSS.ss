@@ -6,6 +6,10 @@
   <% if $hasAdminStyle('ColorBorderBottomSiteName') %>border-bottom-color: {$getAdminStyle('ColorBorderBottomSiteName')};<% end_if %>
 }
 
+.cms-menu__header .cms-sitename .cms-sitename__link {
+  <% if $hasAdminStyle('ColorIconLogo') %>color: {$getAdminStyle('ColorIconLogo')};<% end_if %>
+}
+
 .cms-menu__header .cms-sitename .cms-sitename__title {
   <% if $hasAdminStyle('ColorForegroundSiteName') %>color: {$getAdminStyle('ColorForegroundSiteName')};<% end_if %>
 }
@@ -20,6 +24,15 @@
 
 .cms-menu__header .cms-login-status .cms-login-status__logout-link {
   <% if $hasAdminStyle('ColorIconLogout') %>color: {$getAdminStyle('ColorIconLogout')};<% end_if %>
+}
+
+.cms-menu__header .cms-sitename:focus,
+.cms-menu__header .cms-sitename:hover,
+.cms-menu__header .cms-login-status .cms-login-status__profile-link:focus,
+.cms-menu__header .cms-login-status .cms-login-status__profile-link:hover,
+.cms-menu__header .cms-login-status .cms-login-status__logout-link:focus,
+.cms-menu__header .cms-login-status .cms-login-status__logout-link:hover {
+  <% if $hasAdminStyle('ColorBackgroundHoverMenuHeader') %>background-color: {$getAdminStyle('ColorBackgroundHoverMenuHeader')};<% end_if %>
 }
 
 .cms-menu {
@@ -91,6 +104,19 @@
 .cms-menu .sticky-status-indicator,
 .cms-menu .sticky-toggle {
   <% if $hasAdminStyle('ColorToggleStatus') %>color: {$getAdminStyle('ColorToggleStatus')};<% end_if %>
+}
+
+.form-control:focus,
+.field input.text:focus,
+.field select:focus,
+.field textarea:focus,
+.field .chosen-drop,
+.field .chosen-container-active .chosen-choices,
+.field .chosen-container-active .chosen-single,
+.is-focused:not(.is-open) > .Select-control,
+.is-open > .Select-control,
+.Select-menu-outer {
+  <% if $hasAdminStyle('ColorBorderFocusField') %>border-color: {$getAdminStyle('ColorBorderFocusField')};<% end_if %>
 }
 
 <% if $HideDisabledPageTypes %>

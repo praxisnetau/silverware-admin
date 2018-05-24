@@ -47,8 +47,10 @@ array in your configuration. This needs to be applied to `LeftAndMain`. For exam
 SilverStripe\Admin\LeftAndMain:
   admin_style:
     ColorBackgroundMenuHeader: '#005b94'
+    ColorBackgroundHoverMenuHeader: '#207bb4'
     ColorForegroundSiteName: '#fff'
     ColorForegroundProfile: '#fff'
+    ColorIconLogo: '#fff'
     ColorIconProfile: '#fff'
     ColorIconLogout: '#fff'
     ColorBorderBottomSiteName: '#106ba4'
@@ -69,6 +71,7 @@ SilverStripe\Admin\LeftAndMain:
     ColorBorderTopToggle: '#20282c'
     ColorToggleStatus: '#fff'
     ColorToggleCollapse: '#fff'
+    ColorBorderFocusField: '#139fda'
 ```
 
 Each variable should be self-explanatory, with the exception of `ColorBorderRightMenuHide`. If set to `true`,

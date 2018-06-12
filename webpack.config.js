@@ -8,14 +8,13 @@ const webpack = require('webpack');
 
 // Load Plugins:
 
-const CopyPlugin        = require('copy-webpack-plugin');
 const CleanPlugin       = require('clean-webpack-plugin');
 const UglifyJsPlugin    = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Define Base:
 
-const BASE = '/resources/silverware/admin';
+const BASE = '/resources/vendor/silverware/admin';
 
 // Define Paths:
 
